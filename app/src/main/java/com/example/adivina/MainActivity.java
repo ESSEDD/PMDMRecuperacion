@@ -39,8 +39,6 @@ public class MainActivity extends AppCompatActivity {
         b9.setOnClickListener(eventoClick);
         b0.setOnClickListener(eventoClick);
 
-        String hola = "es una prueba";
-
     }
 }
 
