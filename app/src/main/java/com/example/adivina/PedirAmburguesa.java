@@ -13,16 +13,18 @@ import android.widget.Toast;
 import android.widget.VideoView;
 
 public class PedirAmburguesa extends AppCompatActivity {
-
+    //crap design
+    //crear una nueva actividad (statactivity(o intent) (tipo carne etc))
+    //el fin es pintar una hamburguesa en una actividad nueva
     private Button btnCarne, btnPollo, btnQuesoSi, btnQuesoNo, btnBaconSi, btnBaconNo, btnPedir, btnReset;
-    private int precio;
+    private float precio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pedir_amburguesa);
-        precio = 0;
+        precio = 0f;
         btnReset = findViewById(R.id.btnReset);
         btnCarne = findViewById(R.id.btnCarne);
         btnPollo = findViewById(R.id.btnPollo);
@@ -45,7 +47,7 @@ public class PedirAmburguesa extends AppCompatActivity {
                 new View.OnClickListener() {
                     public void onClick(View v) {
                         Toast.makeText(getApplicationContext(),"Has seleccionado Carne",Toast.LENGTH_SHORT).show();
-                        precio += 7;
+                        precio += 7f;
                     }
                 }
         );
@@ -54,7 +56,7 @@ public class PedirAmburguesa extends AppCompatActivity {
                 new View.OnClickListener() {
                     public void onClick(View v) {
                         Toast.makeText(getApplicationContext(),"Has seleccionado Pollo",Toast.LENGTH_SHORT).show();
-                        precio += 5;
+                        precio += 5f;
                     }
                 }
         );
@@ -63,7 +65,7 @@ public class PedirAmburguesa extends AppCompatActivity {
                 new View.OnClickListener() {
                     public void onClick(View v) {
                         Toast.makeText(getApplicationContext(),"Has seleccionado con Queso",Toast.LENGTH_SHORT).show();
-                        precio += 2;
+                        precio += 2f;
                     }
                 }
         );
@@ -80,7 +82,7 @@ public class PedirAmburguesa extends AppCompatActivity {
                 new View.OnClickListener() {
                     public void onClick(View v) {
                         Toast.makeText(getApplicationContext(),"Has seleccionado con Bacon",Toast.LENGTH_SHORT).show();
-                        precio += 2;
+                        precio += 2f;
                     }
                 }
         );
@@ -97,7 +99,7 @@ public class PedirAmburguesa extends AppCompatActivity {
                 new View.OnClickListener() {
                     public void onClick(View v) {
                         Toast.makeText(getApplicationContext(),"Has eliminado todas las opciones",Toast.LENGTH_SHORT).show();
-                        precio = 0;
+                        precio = 0f;
                     }
                 }
         );
