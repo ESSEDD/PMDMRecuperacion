@@ -36,7 +36,7 @@ public class PedirAmburguesa extends AppCompatActivity {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Pedido");
-        builder.setMessage("Tu hamburguesa cuesta " + precio + " $");
+        builder.setMessage("Configura tu hamburguesa");
         builder.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -107,6 +107,7 @@ public class PedirAmburguesa extends AppCompatActivity {
         btnPedir.setOnClickListener(
                 new View.OnClickListener() {
                     public void onClick(View v) {
+                        builder.setMessage("Tu hamburguesa cuesta " + precio + " $");
                         builder.show();
                     }
                 }
