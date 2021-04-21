@@ -6,6 +6,72 @@
     android:layout_height="match_parent"
     tools:context=".PedirAmburguesa">
 
+    <Button
+        android:id="@+id/btnPollo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="POLLO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.736"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTipoCarne" />
+
+    <Button
+        android:id="@+id/btnCarne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CARNE"
+        app:layout_constraintEnd_toStartOf="@+id/btnPollo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnPollo" />
+
+    <TextView
+        android:id="@+id/txtTipoCarne"
+        android:layout_width="241dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="98dp"
+        android:text="TIPO DE CARNE"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBaconNo"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <TextView
+        android:id="@+id/txtBacon"
+        android:layout_width="120dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="376dp"
+        android:text="BACON"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/txtQueso"
+        android:layout_width="106dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="220dp"
+        android:text="QUESO"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="110dp"
@@ -29,12 +95,59 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <VideoView
-        android:id="@+id/videoView"
-        android:layout_width="409dp"
-        android:layout_height="168dp"
-        app:layout_constraintEnd_toEndOf="parent"
+    <Button
+        android:id="@+id/btnQuesoSi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="SI"
+        app:layout_constraintEnd_toStartOf="@+id/btnQuesoNo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCarne" />
+
+    <Button
+        android:id="@+id/btnBaconSi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SI"
+        app:layout_constraintBottom_toTopOf="@+id/btnPedir"
+        app:layout_constraintEnd_toStartOf="@+id/btnQuesoNo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnBaconNo"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <Button
+        android:id="@+id/btnQuesoNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="NO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.736"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPollo" />
+
+    <Button
+        android:id="@+id/btnBaconNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="NO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.736"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnQuesoNo"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <Button
+        android:id="@+id/btnPedir"
+        android:layout_width="196dp"
+        android:layout_height="62dp"
+        android:text="PIDE YA!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnReset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnReset" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
