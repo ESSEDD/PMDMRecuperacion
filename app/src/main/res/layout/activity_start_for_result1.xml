@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8BC34A"
+    tools:context=".startActivityForResult1">
+
+    <TextView
+        android:id="@+id/txtCalculadora"
+        android:layout_width="421dp"
+        android:layout_height="74dp"
+        android:background="#4CAF50"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="CALCULADORA"
+        android:textAlignment="center"
+        android:textColor="#9C27B0"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPrimerNumero"
+        android:layout_width="282dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="PRIMER NUMERO"
+        android:textColor="#9C27B0"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCalculadora" />
+
+    <TextView
+        android:id="@+id/txtSegundoNumero"
+        android:layout_width="282dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="SEGUNDO NUMERO"
+        android:textColor="#9C27B0"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txtPrimerNumero"
+        app:layout_constraintTop_toBottomOf="@+id/txtResNumUno" />
+
+    <TextView
+        android:id="@+id/txtResNumUno"
+        android:layout_width="268dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:foregroundTint="#673AB7"
+        android:foregroundTintMode="src_over"
+        android:text="ELIJA NUMERO 1"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnPrimerNum"
+        app:layout_constraintStart_toStartOf="@+id/txtPrimerNumero"
+        app:layout_constraintTop_toBottomOf="@+id/txtPrimerNumero" />
+
+    <TextView
+        android:id="@+id/txtResNumDos"
+        android:layout_width="268dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:foregroundTint="#673AB7"
+        android:foregroundTintMode="src_over"
+        android:text="ELIJA NUMERO 2"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnSegundoNum"
+        app:layout_constraintStart_toStartOf="@+id/txtSegundoNumero"
+        app:layout_constraintTop_toBottomOf="@+id/txtSegundoNumero" />
+
+    <Button
+        android:id="@+id/btnPrimerNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#673AB7"
+        android:text="NUM"
+        android:textColor="#CDDC39"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/txtPrimerNumero"
+        app:layout_constraintTop_toTopOf="@+id/txtPrimerNumero" />
+
+    <Button
+        android:id="@+id/btnSegundoNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#673AB7"
+        android:text="NUM"
+        android:textColor="#CDDC39"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/txtSegundoNumero"
+        app:layout_constraintTop_toTopOf="@+id/txtSegundoNumero" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

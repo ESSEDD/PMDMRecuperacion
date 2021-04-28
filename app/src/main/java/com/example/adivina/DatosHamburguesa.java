@@ -2,6 +2,7 @@ package com.example.adivina;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -17,8 +18,10 @@ public class DatosHamburguesa extends AppCompatActivity {
         setContentView(R.layout.activity_datos_hamburguesa);
         txtTipoCarne = findViewById(R.id.txtPrecio2);
 
-        String txtCarne = getIntent().getStringExtra("keyPollo");
-
+        Intent i = getIntent();
+        String txtCarne = i.getStringExtra("keyCarne");
+        String txtPollo = i.getStringExtra("keyPollo");
+        float txtPrecio = i.getFloatExtra("keyPrecio", 0);
         txtTipoCarne.setText(txtCarne);
 
     }

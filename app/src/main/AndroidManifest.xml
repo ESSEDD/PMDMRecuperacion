@@ -11,14 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Adivina">
-        <activity android:name=".DatosHamburguesa"></activity>
-        <activity android:name=".PedirAmburguesa">
+        <activity android:name=".startActivityForResult2"></activity>
+        <activity android:name=".startActivityForResult1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".DatosHamburguesa" />
+        <activity android:name=".PedirAmburguesa"></activity>
         <activity android:name=".ParImpar" />
         <activity android:name=".MainActivity" />
 
