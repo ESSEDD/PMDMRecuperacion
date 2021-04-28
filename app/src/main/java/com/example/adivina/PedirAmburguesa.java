@@ -19,6 +19,7 @@ public class PedirAmburguesa extends AppCompatActivity {
     //crap design
     //crear una nueva actividad (statactivity(o intent) (tipo carne etc))
     //el fin es pintar una hamburguesa en una actividad nueva
+    //Esto es una prueba de PUSH sin commit
     private float precio;
     private Button btnPedir;
     private RadioButton rbCarne;
