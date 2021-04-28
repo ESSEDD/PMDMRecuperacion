@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".DatosHamburguesa">
+
+    <TextView
+        android:id="@+id/textPedido2"
+        android:layout_width="411dp"
+        android:layout_height="69dp"
+        android:background="#FFC107"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="HAMBURGUESA"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTipoCarne"
+        android:layout_width="202dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="TIPO DE CARNE"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPedido2" />
+
+    <TextView
+        android:id="@+id/txtTipoCarne2"
+        android:layout_width="202dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="TIPO DE CARNE"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtTipoCarne"
+        app:layout_constraintTop_toTopOf="@+id/txtTipoCarne" />
+
+    <TextView
+        android:id="@+id/txtTamanoCarne"
+        android:layout_width="202dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="TAMANO DE CARNE"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/txtTipoCarne"
+        app:layout_constraintTop_toBottomOf="@+id/txtTipoCarne" />
+
+    <TextView
+        android:id="@+id/txtTamanoCarne2"
+        android:layout_width="202dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="TAMANO DE CARNE"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/txtTamanoCarne"
+        app:layout_constraintTop_toBottomOf="@+id/txtTipoCarne2" />
+
+    <TextView
+        android:id="@+id/txtQueso"
+        android:layout_width="202dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="QUESO"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/txtTamanoCarne"
+        app:layout_constraintTop_toBottomOf="@+id/txtTamanoCarne" />
+
+    <TextView
+        android:id="@+id/txtQueso2"
+        android:layout_width="202dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="QUESO"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/txtQueso"
+        app:layout_constraintTop_toBottomOf="@+id/txtTamanoCarne" />
+
+    <TextView
+        android:id="@+id/txtLechuga"
+        android:layout_width="202dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="LECHUGA"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/txtQueso"
+        app:layout_constraintTop_toBottomOf="@+id/txtQueso" />
+
+    <TextView
+        android:id="@+id/txtLechuga2"
+        android:layout_width="202dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="LECHUGA"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/txtLechuga"
+        app:layout_constraintTop_toBottomOf="@+id/txtQueso" />
+
+    <TextView
+        android:id="@+id/txtTomate"
+        android:layout_width="202dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="TOMATE"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/txtLechuga"
+        app:layout_constraintTop_toBottomOf="@+id/txtLechuga" />
+
+    <TextView
+        android:id="@+id/txtTomate2"
+        android:layout_width="202dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="TOMATE"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/txtTomate"
+        app:layout_constraintTop_toBottomOf="@+id/txtLechuga" />
+
+    <TextView
+        android:id="@+id/txtCebolla"
+        android:layout_width="202dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="CEBOLLA"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/txtTomate"
+        app:layout_constraintTop_toBottomOf="@+id/txtTomate" />
+
+    <TextView
+        android:id="@+id/txtCebolla2"
+        android:layout_width="202dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="CEBOLLA"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/txtCebolla"
+        app:layout_constraintTop_toBottomOf="@+id/txtTomate" />
+
+    <TextView
+        android:id="@+id/txtPrecio"
+        android:layout_width="202dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="PRECIO"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCebolla" />
+
+    <TextView
+        android:id="@+id/txtPrecio2"
+        android:layout_width="202dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="PRECIO"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtPrecio"
+        app:layout_constraintStart_toStartOf="@+id/txtPrecio"
+        app:layout_constraintTop_toBottomOf="@+id/txtPrecio" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
