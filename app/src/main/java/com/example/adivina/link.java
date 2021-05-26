@@ -47,7 +47,7 @@ public class link extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Intent.ACTION_SEND);
-                i.setData(Uri.parse("tel:123456789"));
+                i.setData(Uri.parse("hola"));
                 startActivity(i);
             }
         });

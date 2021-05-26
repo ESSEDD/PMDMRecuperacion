@@ -35,7 +35,6 @@ public class startActivityForResult1 extends AppCompatActivity {
 
     }
 
-    public void onActivityResult() {
 
-    }
+
 }
