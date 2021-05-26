@@ -15,5 +15,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="411dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="70dp"
+        android:text="llamada"
+        app:layout_constraintBottom_toTopOf="@+id/btnlink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMsg"
+        android:layout_width="407dp"
+        android:layout_height="46dp"
+        android:text="Mensaje"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnlink" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
