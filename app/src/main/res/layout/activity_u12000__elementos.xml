@@ -6,20 +6,44 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/e_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
+        android:id="@+id/scoreLocal"
+        android:layout_width="54dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
         android:text="XX"
+        app:layout_constraintEnd_toStartOf="@+id/equipoVisitante"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toEndOf="@+id/equipoLocal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreVisitante"
+        android:layout_width="57dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:text="XX"
+        app:layout_constraintEnd_toStartOf="@+id/equipoVisitante"
+        app:layout_constraintStart_toEndOf="@+id/scoreLocal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/equipoVisitante"
+        android:layout_width="108dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:text="XX"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.993"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/e_info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/equipoLocal"
+        android:layout_width="111dp"
+        android:layout_height="65dp"
         android:text="Información"
-        app:layout_constraintStart_toStartOf="@+id/e_id"
-        app:layout_constraintTop_toBottomOf="@+id/e_id" />
+        app:layout_constraintEnd_toStartOf="@+id/equipoVisitante"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

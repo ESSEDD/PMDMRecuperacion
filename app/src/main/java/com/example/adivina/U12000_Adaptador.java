@@ -57,8 +57,8 @@ public class U12000_Adaptador extends RecyclerView.Adapter<U12000_Adaptador.View
 
         ViewHolder(View itemView) {
             super(itemView);
-            tvId = itemView.findViewById(R.id.e_id);
-            tvInfo = itemView.findViewById(R.id.e_info);
+            tvId = itemView.findViewById(R.id.scoreLocal);
+            tvInfo = itemView.findViewById(R.id.equipoLocal);
             itemView.setOnClickListener(this);
         }
 
