@@ -13,14 +13,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Adivina">
-        <activity android:name=".ActividadLog">
+        <activity android:name=".U12000_ListaDeElementos">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".link"/>
+
+        <activity android:name=".ActividadLog" />
+        <activity android:name=".link" />
         <activity android:name=".startActivityForResult2" />
         <activity android:name=".startActivityForResult1" />
         <activity android:name=".DatosHamburguesa" />
